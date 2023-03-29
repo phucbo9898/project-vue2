@@ -1,0 +1,67 @@
+*,Cấu trúc thư mục
+	-, src: source code
+		+, main.js => file gốc
+        +, App.vue => Component gốc
+        +, assets: hình ảnh, font chữ
+        +, components => chứa các component con
+    -, Component:
+        +, 3 thành phần:
+            +, Hiển thị (template html)
+            +, scriptL js => xử lý
+            +, style: css => làm đẹp
+                +, hỗ trợ scss:
+                +, scoped style: style dành riêng cho Component
+*, Tạo component:
+    +, tạo file.vue
+    +, import
+    +, khai báo
+*, Root element:
+    +, Bắt buộc ( mỗi component chỉ có 1 element)
+*, 2 ways binding:
+    +, bind dữ liệu 2 chiều
+    +, phụ thuộc vào kiểu element
+*, Lifecycle: vòng đời của component trong vue
+*, binding:
+    -, value binding: {{ ten_bien }}
+    -, property binding: 
+        +, v-bind:[ten-thuoc-tinh]="bien"
+            +, viết tắt v-bind: == ":"
+        +, style and class binding (:class)
+*, model:
+    -, liên kết 1 element với 1 property
+*, event handling
+    -, bắt sự kiện từ các element
+        +, v-on:[ten-su-kien]="function()"
+            +, viết tắt: v-on => "@"
+        +, prevent default event:
+            +, hủy bỏ event mặc định của element đi
+*, ref:
+    -, ánh xạ đến chính cái element
+
+
+Conditional rendering:
+    -, v-show: ẩn / hiện 1 element theo điều kiện
+    -, v-hide: ngược lại của v-show
+    -, v-if: ẩn hiện 1 element theo điều kiện
+        -, so sánh v-if và v-show
+            +, v-show ẩn element (thêm style=disable:none)
+            +, v-if ẩn element ( xóa hẳn element)
+    -, v-else:
+
+List rendering:
+    -, v-for: vòng lặp
+
+Methods:
+    -, hàm của view object
+
+watch:
+    -, theo dõi sự thay đổi của data
+    -, có 2 giá trị: newValue, oldValue để kiểm tra
+
+Hooks:
+    -, mounted: là hàm chạy đầu tiên, hay dùng call api
+
+props:
+    -, dữ liệu đẩy từ component cho sang component con
+    -, dùng mảng tên các props
+

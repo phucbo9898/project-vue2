@@ -1,12 +1,12 @@
 <template>
-  <div class="hello">
-
+  <div>
+    <h2>Đây là menu oke chưa</h2>
   </div>
 </template>
 
 <script>
 export default {
-  
+ 
 };
 </script>
 
